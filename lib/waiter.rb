@@ -23,7 +23,7 @@ end
 
 def best_tipper
   best=0
-  customer
+  customer=nil
   meals.each do |m|
     if best < m.tip
       best = m.tip
