@@ -23,7 +23,7 @@ class Customer
   end
   
   def waiters
-    binding.pry
+    meals.
   end
   
 end
