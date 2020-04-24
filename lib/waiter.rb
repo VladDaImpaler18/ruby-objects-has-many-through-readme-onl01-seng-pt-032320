@@ -22,7 +22,8 @@ end
 
 def best_tipper
   best=0
-  meals.select{|m| best = m.tip if best < m.tip}
+  meals.each{|m| best = m.tip if best < m.tip}
+  best
 end
 
 end
