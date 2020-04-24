@@ -1,3 +1,4 @@
+require 'pry'
 class Waiter
 attr_accessor :name, :years
 @@all = []
@@ -13,7 +14,8 @@ def self.all
 end
 
 def new_meal
-  Meal.new(self, customer_obj, total, tip=0)
+  binding.pry
+  #Meal.new(self, customer_obj, total, tip=0)
 end
 
 def meals
