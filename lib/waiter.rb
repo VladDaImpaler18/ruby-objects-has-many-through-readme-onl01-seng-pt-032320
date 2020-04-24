@@ -25,8 +25,10 @@ def best_tipper
   best=0
   customer
   meals.each do |m|
-    best = m.tip if best < m.tip
-    customer = m.customer
+    if best < m.tip
+      best = m.tip
+      customer = m.customer
+    end
   end
   customer
 end
