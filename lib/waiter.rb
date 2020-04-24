@@ -13,9 +13,8 @@ def self.all
   @@all
 end
 
-def new_meal
-  binding.pry
-  #Meal.new(self, customer_obj, total, tip=0)
+def new_meal(customer_obj,total,tip=0)
+  Meal.new(self, customer_obj, total, tip)
 end
 
 def meals
